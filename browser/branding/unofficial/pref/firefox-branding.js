@@ -7,7 +7,7 @@ pref("app.update.interval", 172800);
 pref("app.update.auto", false);
 pref("app.update.enabled", false);
 // URL for update checks, re-enabled on palemoon.org (369)
-pref("app.update.url", "http://www.palemoon.org/update/%VERSION%/Atom/update.xml");
+pref("app.update.url", "http://www.palemoon.org/update/%VERSION%/%BUILD_TARGET%/update.xml");
 pref("app.update.promptWaitTime", 86400); 
 // The time interval between the downloading of mar file chunks in the
 // background (in seconds)
@@ -59,20 +59,12 @@ pref("extensions.blocklist.url","http://blocklist.palemoon.org/%VERSION%/blockli
 
 // ****************** domain-specific UAs ******************
 
-// Required for domains that have proven unresponsive to requests from users
-pref("general.useragent.override.live.com","Mozilla/5.0 (Windows NT; x86; rv:28.0) Gecko/20100101 Firefox/28.0 (Pale Moon)");
-pref("general.useragent.override.outlook.com","Mozilla/5.0 (Windows NT; x86; rv:28.0) Gecko/20100101 Firefox/28.0 (Pale Moon)");
-pref("general.useragent.override.web.de","Mozilla/5.0 (Windows NT; x86; rv:28.0) Gecko/20100101 Firefox/28.0 (Pale Moon)");
-pref("general.useragent.override.aol.com","Mozilla/5.0 (Windows NT; x86; rv:28.0) Gecko/20100101 Firefox/28.0 (Pale Moon)");
+pref("general.useragent.override.live.com","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0 (Pale Moon)");
+pref("general.useragent.override.outlook.com","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0 (Pale Moon)");
+pref("general.useragent.override.web.de","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0 (Pale Moon)");
+pref("general.useragent.override.aol.com","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0 (Pale Moon)");
+pref("general.useragent.override.privat24.ua","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0");
 
-// UA-Sniffing domains below are pending responses from their operators - temp workaround
-pref("general.useragent.override.netflix.com","Mozilla/5.0 (Windows NT; x86; rv:25.1) Gecko/20100101 Firefox/24.9 PaleMoon/25.1.0");
-pref("general.useragent.override.facebook.com","Opera/9.80 (Pale Moon)");
-
-// UA-Sniffing domains below have indicated no interest in supporting Pale Moon (BOO!)
-pref("general.useragent.override.humblebundle.com","Mozilla/5.0 (Windows NT; x86; rv:33.0) Gecko/20100101 Firefox/33.0 (Pale Moon)");
-pref("general.useragent.override.privat24.ua","Mozilla/5.0 (Windows NT; x86; rv:28.0) Gecko/20100101 Firefox/28.0");
-pref("general.useragent.override.icloud.com","Mozilla/5.0 (Windows NT; x86; rv:28.0) Gecko/20100101 Firefox/28.0 (Pale Moon)");
 
 // Enable Firefox compatibility mode globally?
 pref("general.useragent.compatMode.firefox", false);
