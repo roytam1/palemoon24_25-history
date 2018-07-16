@@ -10,6 +10,7 @@
 <!ENTITY status4evar.tab.popup "ಪಾಪ್-ಅಪ್">
 <!ENTITY status4evar.tab.tabs "ಟ್ಯಾಬ್ಗಳು">
 <!ENTITY status4evar.option.none "ಯಾವುದೂ ಇಲ್ಲ">
+<!ENTITY status4evar.option.nothing "Nothing">
 <!ENTITY status4evar.option.toolbar "ಸ್ಥಿತಿ ಪಟ್ಟಿ">
 <!ENTITY status4evar.option.urlbar "ವಿಳಾಸ ಪಟ್ಟಿ">
 <!ENTITY status4evar.option.popup "ಪಾಪ್-ಅಪ್">
@@ -33,6 +34,11 @@
 <!ENTITY status4evar.option.no-repeat "ಮತ್ತೊಮ್ಮೆ ಬೇಡ">
 <!ENTITY status4evar.option.space "ಸ್ಪೇಸ್">
 <!ENTITY status4evar.option.round "ಗೋಲ">
+<!ENTITY status4evar.option.firefoxdefault "Pale Moon default">
+<!ENTITY status4evar.option.download.panel "Panel">
+<!ENTITY status4evar.option.download.library "Library">
+<!ENTITY status4evar.option.download.classic "Classic">
+<!ENTITY status4evar.unit.milliseconds "milliseconds">
 <!ENTITY status4evar.unit.seconds "ಸೆಕೆಂಡುಗಳು">
 <!ENTITY status4evar.unit.px "px">
 <!ENTITY status4evar.status.general.status.caption "ಸ್ಥಿತಿ ಪಠ್ಯ">
@@ -51,7 +57,7 @@
 <!ENTITY status4evar.status.urlbar.color.label "ಸ್ಥಿತಿ ಬಣ್ಣ:">
 <!ENTITY status4evar.status.currentUrl "ಪ್ರಸ್ತುತ ಸ್ಥಳ">
 <!ENTITY status4evar.status.statusText "ಸ್ಥಿತಿ ಪಠ್ಯ">
-<!ENTITY status4evar.status.urlbar.firefox.builtin.caption "ಫೈರ್ಫಾಕ್ಸ್ ಹೊಂದಾಣಿಕೆ ಲಕ್ಷಣಗಳು">
+<!ENTITY status4evar.status.firefox.compat.caption "ಫೈರ್ಫಾಕ್ಸ್ ಹೊಂದಾಣಿಕೆ ಲಕ್ಷಣಗಳು">
 <!ENTITY browser.urlbar.formatting.enabled.label "ಡೊಮೇನ್ ಹೈಲೈಟ್ ಸಕ್ರಿಯಗೊಳಿಸಿ">
 <!ENTITY browser.urlbar.trimming.enabled.label "ಪ್ರೋಟೋಕಾಲ್ ಅಡಗಿಸುವುದನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ(http:// ಮತ್ತು ftp://)">
 <!ENTITY browser.urlbar.autofill.enabled.label "URLಗಳ ಸ್ವಯಂಪೂರ್ಣಗೊಳಿಸುವಿಕೆ ಸಕ್ರಿಯಗೊಳಿಸಿ">
@@ -68,6 +74,7 @@
 <!ENTITY status4evar.editor.css.image.repeat "ಪುನರಾವರ್ತನೆ">
 <!ENTITY status4evar.editor.css.image.position "ಸ್ಥಾನ">
 <!ENTITY status4evar.editor.css.image.offset "ಆಫ್ಸೆಟ್">
+<!ENTITY status4evar.download.button.action.label "Download status button action:">
 <!ENTITY status4evar.download.force.label "ಯಾವಾಗಲೂ ಡೌನ್ಲೋಡ್ ಸ್ಥಿತಿ ಸೂಚಕ ತೋರಿಸಲು">
 <!ENTITY status4evar.download.label.force.label "ಯಾವಾಗಲೂ ಬಟನ್ ಪಠ್ಯ ತೋರಿಸಲು">
 <!ENTITY status4evar.download.label.label "ಡೌನ್ಲೋಡ್ ಸ್ಥಿತಿ ಸೂಚಕ ಪಠ್ಯ:">
@@ -78,7 +85,8 @@
 <!ENTITY status4evar.download.progress.min.label "ಕನಿಷ್ಠ ಪೂರ್ಣಗೊಂಡ ಡೌನ್ಲೋಡ್ ತೋರಿಸಿ">
 <!ENTITY status4evar.download.color.active.label "ಸಕ್ರಿಯ ಡೌನ್ಲೋಡ್ಗಳು ಪ್ರಗತಿಯಲ್ಲಿರುವಾಗ ಬಣ್ಣ:">
 <!ENTITY status4evar.download.color.paused.label "ವಿರಾಮಗೊಳಿಸಿದ ಡೌನ್ಲೋಡ್ಗಳ ಪ್ರಗತಿಯ ಬಣ್ಣ:">
-<!ENTITY toolkit.classic.download.window.label "ಸಾಂಪ್ರದಾಯಕ ಡೌನ್ಲೋಡ್ ವಿಂಡೋ ಬಳಸಿ">
+<!ENTITY status4evar.download.notify.animate.label "Animate button when download completes">
+<!ENTITY status4evar.download.notify.timeout.label "Highlight button when download completes:">
 <!ENTITY status4evar.addonbar.borderStyle "ಪರ್ಯಾಯ ಟೂಲ್ಬಾರ್ ಅಂಚುಗಳನ್ನು ಬಳಸಿ">
 <!ENTITY status4evar.addonbar.windowGripper "ವಿಂಡೋ ಮರು ಗಾತ್ರ ಹಿಡಿಕೆ ತೋರಿಸಿ">
 <!ENTITY status4evar.addonbar.closeButton "ಮುಚ್ಚುವ ಗುಂಡಿಯನ್ನು ತೋರಿಸಿ">
@@ -86,3 +94,4 @@
 <!ENTITY status4evar.advanced.urlbar.forceBinding "ವಿಳಾಸ ಪಟ್ಟಿ XBL binding ಪ್ರಯತ್ನಿಸು.">
 <!ENTITY status4evar.advanced.urlbar.forceBinding.desc "ನೀವು ವಿಳಾಸ ಪಟ್ಟಿ ಪ್ರಗತಿ ಅಥವಾ ಸ್ಥಿತಿ ಪಠ್ಯದಲ್ಲಿ ಸರಿಯಾಗಿ ತೋರದಿರುವ ಸಮಸ್ಯೆಗಳನ್ನು ಹೊಂದಿದ್ದರೆ ಮಾತ್ರ ಇದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ. ಇದು ವಿಳಾಸ ಪಟ್ಟಿ ಮೇಲೆ XBL binding ಹೊಂದಲು ಯತ್ನಿಸುವ ಇತರ ವಿಸ್ತರಣೆಗಳನ್ನು ಮುರಿಯುವ ಸಂಭಾವ್ಯತೆ ಇದೆ.">
 <!ENTITY status4evar.advanced.status.detectFullScreen "ಪೂರ್ಣ ಪರದೆ ಮೋಡನ್ನು ಸೂಕ್ತವಾಗಿ ಪತ್ತೆಮಾಡಿ, ಪ್ರದರ್ಶನದ ಕೊಂಡಿ / ಸ್ಥಿತಿಗಳನ್ನು ತೋರಿಸು.">
+<!ENTITY toolkit.classic.download.window.label "ಸಾಂಪ್ರದಾಯಕ ಡೌನ್ಲೋಡ್ ವಿಂಡೋ ಬಳಸಿ">

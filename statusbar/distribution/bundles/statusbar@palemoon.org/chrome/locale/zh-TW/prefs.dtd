@@ -10,6 +10,7 @@
 <!ENTITY status4evar.tab.popup "彈出框">
 <!ENTITY status4evar.tab.tabs "分頁">
 <!ENTITY status4evar.option.none "無">
+<!ENTITY status4evar.option.nothing "不反應">
 <!ENTITY status4evar.option.toolbar "狀態列">
 <!ENTITY status4evar.option.urlbar "網址列">
 <!ENTITY status4evar.option.popup "彈出框">
@@ -33,6 +34,11 @@
 <!ENTITY status4evar.option.no-repeat "不重複">
 <!ENTITY status4evar.option.space "空白">
 <!ENTITY status4evar.option.round "圓角">
+<!ENTITY status4evar.option.firefoxdefault "Pale Moon 預設設定">
+<!ENTITY status4evar.option.download.panel "開啟下載主控台">
+<!ENTITY status4evar.option.download.library "開啟收藏庫">
+<!ENTITY status4evar.option.download.classic "開啟傳統下載視窗">
+<!ENTITY status4evar.unit.milliseconds "毫秒">
 <!ENTITY status4evar.unit.seconds "秒">
 <!ENTITY status4evar.unit.px "像素">
 <!ENTITY status4evar.status.general.status.caption "狀態文字">
@@ -51,7 +57,7 @@
 <!ENTITY status4evar.status.urlbar.color.label "狀態顏色">
 <!ENTITY status4evar.status.currentUrl "目前位置">
 <!ENTITY status4evar.status.statusText "狀態文字">
-<!ENTITY status4evar.status.urlbar.firefox.builtin.caption "Firefox 兼容功能">
+<!ENTITY status4evar.status.firefox.compat.caption "Firefox 兼容功能">
 <!ENTITY browser.urlbar.formatting.enabled.label "開啟域名強調">
 <!ENTITY browser.urlbar.trimming.enabled.label "啟用協議隱藏 (http:// and ftp://)">
 <!ENTITY browser.urlbar.autofill.enabled.label "開啟網址自動完成">
@@ -68,6 +74,7 @@
 <!ENTITY status4evar.editor.css.image.repeat "重複">
 <!ENTITY status4evar.editor.css.image.position "位置">
 <!ENTITY status4evar.editor.css.image.offset "偏移">
+<!ENTITY status4evar.download.button.action.label "點擊下載狀態按鈕時動作">
 <!ENTITY status4evar.download.force.label "總是顯示下載指示器">
 <!ENTITY status4evar.download.label.force.label "總是顯示按鈕文字">
 <!ENTITY status4evar.download.label.label "下載指示器文字">
@@ -78,7 +85,8 @@
 <!ENTITY status4evar.download.progress.min.label "顯示完成最少的下載進度">
 <!ENTITY status4evar.download.color.active.label "下載檔案的進度顏色">
 <!ENTITY status4evar.download.color.paused.label "暫停下載的進度顏色">
-<!ENTITY toolkit.classic.download.window.label "使用傳統下載視窗">
+<!ENTITY status4evar.download.notify.animate.label "下載完成時在下載進度指示按鈕顯示動畫">
+<!ENTITY status4evar.download.notify.timeout.label "下在完成時高對比顯示下載進度指示按鈕">
 <!ENTITY status4evar.addonbar.borderStyle "使用另一種工具列邊界樣式">
 <!ENTITY status4evar.addonbar.windowGripper "顯示視窗大小調整抓具">
 <!ENTITY status4evar.addonbar.closeButton "顯示關閉按鈕">
@@ -86,3 +94,4 @@
 <!ENTITY status4evar.advanced.urlbar.forceBinding "強制嘗試為網址列綁定 XBL。">
 <!ENTITY status4evar.advanced.urlbar.forceBinding.desc "請只有在網址列顯示進度或文字不能正確顯示時選擇此選項，此選項可能會破壞其它嘗試綁定 XBL 到網址列的附加元件的功能。">
 <!ENTITY status4evar.advanced.status.detectFullScreen "偵測全螢幕模式並適當地顯示連結/狀態。">
+<!ENTITY toolkit.classic.download.window.label "使用傳統下載視窗">

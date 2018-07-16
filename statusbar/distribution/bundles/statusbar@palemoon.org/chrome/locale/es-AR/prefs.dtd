@@ -10,6 +10,7 @@
 <!ENTITY status4evar.tab.popup "Ventana emergente">
 <!ENTITY status4evar.tab.tabs "Pestañas">
 <!ENTITY status4evar.option.none "Ninguna">
+<!ENTITY status4evar.option.nothing "Nada">
 <!ENTITY status4evar.option.toolbar "Barra de estado">
 <!ENTITY status4evar.option.urlbar "Barra de direcciones">
 <!ENTITY status4evar.option.popup "Ventana emergente">
@@ -33,6 +34,11 @@
 <!ENTITY status4evar.option.no-repeat "No repetir">
 <!ENTITY status4evar.option.space "Espacio">
 <!ENTITY status4evar.option.round "Round">
+<!ENTITY status4evar.option.firefoxdefault "Pale Moon defecto">
+<!ENTITY status4evar.option.download.panel "Panel">
+<!ENTITY status4evar.option.download.library "Biblioteca">
+<!ENTITY status4evar.option.download.classic "Clásico">
+<!ENTITY status4evar.unit.milliseconds "milisegundos">
 <!ENTITY status4evar.unit.seconds "segundos">
 <!ENTITY status4evar.unit.px "píxeles">
 <!ENTITY status4evar.status.general.status.caption "Texto de estado">
@@ -40,7 +46,7 @@
 <!ENTITY status4evar.status.timeout.label "Ocultar el estado después de">
 <!ENTITY status4evar.status.default.label "Mostrar estado predeterminado">
 <!ENTITY status4evar.status.network.label "Mostrar estado de red">
-<!ENTITY status4evar.status.network.xhr.label "Mostrar estado de redShow background network status">
+<!ENTITY status4evar.status.network.xhr.label "Mostrar estado de red de fondo">
 <!ENTITY toolkit.dom.status.change.label "Permitir que las páginas web cambien el estado">
 <!ENTITY status4evar.status.general.linkOver.caption "Enlaces">
 <!ENTITY status4evar.status.linkOver.label "Mostrar enlaces en:">
@@ -51,7 +57,7 @@
 <!ENTITY status4evar.status.urlbar.color.label "Color de estado:">
 <!ENTITY status4evar.status.currentUrl "Ubicación actual">
 <!ENTITY status4evar.status.statusText "Texto de estado">
-<!ENTITY status4evar.status.urlbar.firefox.builtin.caption "Funciones de compatibilidad con Firefox">
+<!ENTITY status4evar.status.firefox.compat.caption "Funciones de compatibilidad con Firefox">
 <!ENTITY browser.urlbar.formatting.enabled.label "Habilitar resaltado de dominio">
 <!ENTITY browser.urlbar.trimming.enabled.label "Habilitar ocultamiento de protocolo (http:// y ftp://)">
 <!ENTITY browser.urlbar.autofill.enabled.label "Habilitar autocompletado de direcciones web">
@@ -68,6 +74,7 @@
 <!ENTITY status4evar.editor.css.image.repeat "Repetir">
 <!ENTITY status4evar.editor.css.image.position "Posición">
 <!ENTITY status4evar.editor.css.image.offset "Ubicación">
+<!ENTITY status4evar.download.button.action.label "Acción Descargar status-botón:">
 <!ENTITY status4evar.download.force.label "Siempre mostrar el indicador de estado de descarga">
 <!ENTITY status4evar.download.label.force.label "Siempre mostrar el texto del botón">
 <!ENTITY status4evar.download.label.label "Texto indicador de estado de descarga:">
@@ -78,7 +85,8 @@
 <!ENTITY status4evar.download.progress.min.label "Mostrar la minoría de descargas completas">
 <!ENTITY status4evar.download.color.active.label "Color de progreso para descargas activas:">
 <!ENTITY status4evar.download.color.paused.label "Color de progreso para descargas pausadas:">
-<!ENTITY toolkit.classic.download.window.label "Usar la ventana clásica de descarga">
+<!ENTITY status4evar.download.notify.animate.label "Animar el botón al completar la descarga">
+<!ENTITY status4evar.download.notify.timeout.label "Resalte el botón al completar la descarga">
 <!ENTITY status4evar.addonbar.borderStyle "Usar los bordes alternativos de la barra de herramientas">
 <!ENTITY status4evar.addonbar.windowGripper "Mostrar el ajuste diagonal de ventana">
 <!ENTITY status4evar.addonbar.closeButton "Mostrar el botón Cerrar">
@@ -86,3 +94,4 @@
 <!ENTITY status4evar.advanced.urlbar.forceBinding "Intentar forzar la asociación XBL a la barra de direcciones.">
 <!ENTITY status4evar.advanced.urlbar.forceBinding.desc "Solamente seleccioná esto si tenés problemas para mostrar correctamente el progreso en la barra de direcciones o los textos de estado. Esto potencialmente hará corromper la funcionabilidad de otras extensiones que intenten asociar un archivo XBL en la barra de direcciones.">
 <!ENTITY status4evar.advanced.status.detectFullScreen "Detectar modo a pantalla completa y mostrar enlaces/estados como apropiados.">
+<!ENTITY toolkit.classic.download.window.label "Usar la ventana clásica de descarga">

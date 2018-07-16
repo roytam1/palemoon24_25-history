@@ -9,7 +9,6 @@ const CU = Components.utils;
 
 CU.import("resource://gre/modules/XPCOMUtils.jsm");
 CU.import("resource://gre/modules/Services.jsm");
-CU.import("resource://gre/modules/AddonManager.jsm");
 
 const CURRENT_MIGRATION = 6;
 
@@ -33,11 +32,14 @@ Status_4_Evar.prototype =
 	advancedStatusDetectFullScreen: true,
 	advancedUrlbarForceBinding:	false,
 
+	downloadButtonAction:		1,
 	downloadColorActive:		null,
 	downloadColorPaused:		null,
 	downloadForce:			false,
 	downloadLabel:			0,
 	downloadLabelForce:		true,
+	downloadNotifyAnimate:		true,
+	downloadNotifyTimeout:		60000,
 	downloadProgress:		1,
 	downloadTooltip:		1,
 
@@ -54,7 +56,7 @@ Status_4_Evar.prototype =
 	status:				1,
 	statusDefault:			true,
 	statusNetwork:			true,
-	statusTimeout:			0,
+	statusTimeout:			10000,
 	statusLinkOver:			1,
 	statusLinkOverDelayShow:	70,
 	statusLinkOverDelayHide:	150,
@@ -138,6 +140,18 @@ Status_4_Evar.prototype =
 			}
 		},
 
+		"download.button.action":
+		{
+			update: function()
+			{
+				this.downloadButtonAction = this.prefs.getIntPref("download.button.action");
+			},
+			updateWindow: function(win)
+			{
+				win.caligon.status4evar.downloadStatus.updateBinding();
+			}
+		},
+
 		"download.color.active":
 		{
 			update: function()
@@ -203,6 +217,22 @@ Status_4_Evar.prototype =
 				{
 					this.setBoolElementAttribute(download_button, "forcelabel", this.downloadLabelForce);
 				}
+			}
+		},
+
+		"download.notify.animate":
+		{
+			update: function()
+			{
+				this.downloadNotifyAnimate = this.prefs.getBoolPref("download.notify.animate");
+			}
+		},
+
+		"download.notify.timeout":
+		{
+			update: function()
+			{
+				this.downloadNotifyTimeout = (this.prefs.getIntPref("download.notify.timeout") * 1000);
 			}
 		},
 
@@ -543,7 +573,7 @@ Status_4_Evar.prototype =
 	{
 		try
 		{
-			switch (topic)
+			switch(topic)
 			{
 				case "profile-after-change":
 					this.startup();
@@ -765,37 +795,6 @@ Status_4_Evar.prototype =
 				this.prefs.clearUserPref(pref);
 			}
 		}, this);
-	},
-
-	launchOptions: function(currentWindow)
-	{
-		// AddonManager.getAddonByID("status4evar@caligonstudios.com", function(aAddon)
-		// {
-		// 	let optionsURL = aAddon.optionsURL;
-			let optionsURL = "chrome://status4evar/content/prefs.xul";
-			let windows = Services.wm.getEnumerator(null);
-			while (windows.hasMoreElements())
-			{
-				let win = windows.getNext();
-				if (win.document.documentURI == optionsURL)
-				{
-					win.focus();
-					return;
-				}
-			}
-
-			let features = "chrome,titlebar,toolbar,centerscreen";
-			try
-			{
-				let instantApply = Services.prefs.getBoolPref("browser.preferences.instantApply");
-				features += instantApply ? ",dialog=no" : ",modal";
-			}
-			catch(e)
-			{
-				features += ",modal";
-			}
-			currentWindow.openDialog(optionsURL, "", features);
-		// });
 	}
 };
 

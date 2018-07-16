@@ -10,6 +10,7 @@
 <!ENTITY status4evar.tab.popup "Popup">
 <!ENTITY status4evar.tab.tabs "Karty">
 <!ENTITY status4evar.option.none "Brak">
+<!ENTITY status4evar.option.nothing "Nic">
 <!ENTITY status4evar.option.toolbar "Pasek statusu">
 <!ENTITY status4evar.option.urlbar "Pasek adresu">
 <!ENTITY status4evar.option.popup "Pop-up">
@@ -33,6 +34,11 @@
 <!ENTITY status4evar.option.no-repeat "Nie powtarzaj">
 <!ENTITY status4evar.option.space "Odstęp">
 <!ENTITY status4evar.option.round "Okrągły">
+<!ENTITY status4evar.option.firefoxdefault "Domyślne ustawienie Pale Moon">
+<!ENTITY status4evar.option.download.panel "Panel">
+<!ENTITY status4evar.option.download.library "Biblioteka">
+<!ENTITY status4evar.option.download.classic "Klasyczny">
+<!ENTITY status4evar.unit.milliseconds "milisekund(y)">
 <!ENTITY status4evar.unit.seconds "sekund(y)">
 <!ENTITY status4evar.unit.px "px">
 <!ENTITY status4evar.status.general.status.caption "Tekst statusu">
@@ -51,7 +57,7 @@
 <!ENTITY status4evar.status.urlbar.color.label "Kolor statusu:">
 <!ENTITY status4evar.status.currentUrl "Aktualna pozycja">
 <!ENTITY status4evar.status.statusText "Tekst statusu">
-<!ENTITY status4evar.status.urlbar.firefox.builtin.caption "Funkcje kompatybilności Firefox">
+<!ENTITY status4evar.status.firefox.compat.caption "Funkcje kompatybilności Firefox">
 <!ENTITY browser.urlbar.formatting.enabled.label "Włącz podświetlanie domeny">
 <!ENTITY browser.urlbar.trimming.enabled.label "Włącz ukrywanie protokołu (http:// i ftp://)">
 <!ENTITY browser.urlbar.autofill.enabled.label "Włącz autouzupełnianie URL">
@@ -68,6 +74,7 @@
 <!ENTITY status4evar.editor.css.image.repeat "Powtórz">
 <!ENTITY status4evar.editor.css.image.position "Pozycja">
 <!ENTITY status4evar.editor.css.image.offset "Offset">
+<!ENTITY status4evar.download.button.action.label "Akcja przycisku statusu pobierania:">
 <!ENTITY status4evar.download.force.label "Zawsze pokazuj wskaźnik Statusu Pobierania">
 <!ENTITY status4evar.download.label.force.label "Zawsze pokazuj tekst przycisku">
 <!ENTITY status4evar.download.label.label "Tekst wskaźnika statusu pobierania:">
@@ -78,7 +85,8 @@
 <!ENTITY status4evar.download.progress.min.label "Pokaż najmniej ukończone pobieranie">
 <!ENTITY status4evar.download.color.active.label "Kolor postępu dla aktywnych pobierań:">
 <!ENTITY status4evar.download.color.paused.label "Kolor postępu dla wstrzymanych pobierań:">
-<!ENTITY toolkit.classic.download.window.label "Użyj klasycznego okna pobierania">
+<!ENTITY status4evar.download.notify.animate.label "Animacja przycisku po ukończeniu pobierania">
+<!ENTITY status4evar.download.notify.timeout.label "Podświetlenie przycisku po ukończeniu pobierania:">
 <!ENTITY status4evar.addonbar.borderStyle "Użyj alternatywnych obwódek paska narzędzi">
 <!ENTITY status4evar.addonbar.windowGripper "Pokaż chwytak zmieniania rozmiaru okna">
 <!ENTITY status4evar.addonbar.closeButton "Pokaż przycisk zamykania">
@@ -86,3 +94,4 @@
 <!ENTITY status4evar.advanced.urlbar.forceBinding "Spróbuj wymusić przypisanie XBL paska adresu.">
 <!ENTITY status4evar.advanced.urlbar.forceBinding.desc "Wybierz to tylko jeżeli masz problemy z paskiem adresu źle wyświetlającym dane. W większości przypadków uszkodzi to inne rozszerzenia próbujące wykonać przypisanie XBL na pasku adresu.">
 <!ENTITY status4evar.advanced.status.detectFullScreen "Wykryj tryb pełnego ekranu i pokaż linki/statusy.">
+<!ENTITY toolkit.classic.download.window.label "Użyj klasycznego okna pobierania">
