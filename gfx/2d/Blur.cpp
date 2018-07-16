@@ -11,6 +11,8 @@
 #include <string.h>
 #ifdef WIN32
 #include <windows.h>
+#else
+#include "nspr.h"
 #endif
 
 #include "mozilla/CheckedInt.h"
@@ -27,19 +29,17 @@ namespace gfx {
 
 static uint32_t NumberOfProcessors = 0;
 
+
+#ifdef WIN32
 static void
 GetNumberOfLogicalProcessors(void)
 {
-#ifdef WIN32
     SYSTEM_INFO SystemInfo;
 
     GetSystemInfo(&SystemInfo);
     NumberOfProcessors = SystemInfo.dwNumberOfProcessors;
-#else
-    //Only check once on non-windows
-    NumberOfProcessors = 1;
-#endif
 }
+#endif
 
 static void
 GetNumberOfProcessors(void)
@@ -77,8 +77,8 @@ GetNumberOfProcessors(void)
         GetNumberOfLogicalProcessors();
     }
 #else
-    //Only check once on non-windows
-    NumberOfProcessors = 1;
+    //Use fallback check on non-windows
+    NumberOfProcessors = PR_GetNumberOfProcessors();
 #endif  
 }
 
